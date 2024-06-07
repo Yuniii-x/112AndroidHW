@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- TextView（textView）：顯示文字-->
+
+    <TextView
+        android:id="@+id/textView0"
+        android:layout_width="65dp"
+        android:layout_height="34dp"
+        android:text="票種："
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.274" />
+
+    <!-- RadioGroup（rgGender）：包含兩個用於選擇性別的 RadioButton，"男" 和 "女" -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="65dp"
+        android:layout_height="34dp"
+        android:text="性別:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/rdbBoy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/rdbGirl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="女" />
+    </RadioGroup>
+
+    <!-- RadioGroup（rgType）：包含三個用於選擇票種的 RadioButton："全票"、"兒童票" 和 "學生票"-->
+
+    <!-- Button（button）：點擊此按鈕會觸發一個動作。按鈕標籤為 "確認"-->
+
+    <!--TextView（lblOutput）：此 TextView 用於顯示輸出或消息。-->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="208dp"
+        android:onClick="button_Click"
+        android:text="選擇"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgType" />
+
+    <!-- EditText（edtQuantity）：允許用戶輸入他們想購買的票數量 -->
+    <TextView
+        android:id="@+id/lblOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <EditText
+        android:id="@+id/edtQuantity"
+        android:layout_width="308dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="購買張數"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/textView400"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:text="400元/張"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <TextView
+        android:id="@+id/textView500"
+        android:layout_width="60dp"
+        android:layout_height="37dp"
+        android:text="500元/張"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <RadioGroup
+        android:id="@+id/rgType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="236dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/rdbAdult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="全票" />
+
+        <RadioButton
+            android:id="@+id/rdbChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="兒童票" />
+
+
+        <RadioButton
+            android:id="@+id/rdbStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="學生票" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView250"
+        android:layout_width="74dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="12dp"
+        android:text="250元/張"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.316"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView500"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.411" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
