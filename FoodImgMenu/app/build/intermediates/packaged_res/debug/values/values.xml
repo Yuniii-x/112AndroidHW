@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">FoodImgMenu_0503HW</string>
+    <style name="Base.Theme.FoodImgMenu_0503HW" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.FoodImgMenu_0503HW" parent="Base.Theme.FoodImgMenu_0503HW"/>
+</resources>

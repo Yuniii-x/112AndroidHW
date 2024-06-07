@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id chk_burger
+id chk_coffee
+id chk_frenchfry
+id chk_softdrink
+id chk_soup
+id imageView_burger
+id imageView_coffee
+id imageView_frenchfry
+id imageView_softdrink
+id imageView_soup
+id output1
+id output2
+id output3
+id output4
+id output5
+id showOrder
+layout activity_main
+mipmap burger
+mipmap coffee
+mipmap frenchfry
+mipmap ic_launcher
+mipmap ic_launcher_round
+mipmap softdrink
+mipmap soup
+string app_name
+style Base.Theme.FoodImgMenu_0503HW
+style Theme.FoodImgMenu_0503HW
+xml backup_rules
+xml data_extraction_rules

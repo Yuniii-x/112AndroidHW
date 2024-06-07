@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">RaddioButon1</string>
-    <string name="male">男生</string>
-    <string name="female">女生</string>
-    <string name="regularticket">全票</string>
-    <string name="childticket">兒童票</string>
-    <string name="studentticket">學生票</string>
-    <string name="ticket"></string>
-</resources>
